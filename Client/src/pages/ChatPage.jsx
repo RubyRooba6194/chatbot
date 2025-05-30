@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ChatBox from "../components/Chatbox";
+import ChatBox from "../components/ChatBox";
 import socket from "../sockets/socket";
 import { saveMessage, getChatHistory } from "../services/api";
 
@@ -72,6 +72,7 @@ const ChatPage = () => {
 
   const handleSendMessage = async (text) => {
     const message = { sender: "user", text };
+    console.log("Sending message:", message);
     setMessages((prev) => [...prev, message]);
 
     try {

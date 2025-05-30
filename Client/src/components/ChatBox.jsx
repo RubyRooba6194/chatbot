@@ -1,5 +1,5 @@
 // ChatBox.jsx
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import MessageBubble from "./MessageBubble";
 
 const ChatBox = ({ messages, onSend }) => {
